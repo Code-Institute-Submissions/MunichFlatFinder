@@ -1,0 +1,11 @@
+{
+  "name": "flat-finder-muc",
+  "version": "1.0.0",
+  "description": "helps you find a flat in Munich",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mathilde Barbier",
+  "license": "ISC"
+}
