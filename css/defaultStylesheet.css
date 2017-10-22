@@ -67,10 +67,44 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 	padding-top:15%;
 }
 
-/*About Section and Page */
-#about h1 {
-	padding-top: 30%;
+#HomePage .btn-default {
+	margin: 30% auto;
+	display: block;
+	background-color: #d84797;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size:1.3em;
 }
+
+
+/*About Section*/
+#about {
+	margin-top: -5%;
+	background-color: rgba(253,130,87, 0.1);
+	height: 40vh;
+	width: 100%;
+}
+
+#about h1{	
+	padding-top: 4%;
+	font-size: 2em;
+	width: 100%;
+	text-align: center;
+}
+
+#about ul{
+	margin-top: 20px;
+	margin-left:-10px;
+	list-style: none;
+}
+
+#about ul li{
+	font-size: 0.8em;
+	padding-bottom: 10px;
+}
+
+
+
 
 /*Footer*/
 footer{
