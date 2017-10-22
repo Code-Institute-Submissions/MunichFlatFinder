@@ -43,7 +43,10 @@ h1, h2, h3 {
 button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 	background-color: #d84797;
 	font-size:15px;
-	color:white;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: white;
 }
 
 
@@ -64,11 +67,16 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 	padding-top:15%;
 }
 
+/*About Section and Page */
+#about h1 {
+	padding-top: 30%;
+}
+
 /*Footer*/
 footer{
 	width: 100%;
-	background-color: #00ffcb;
-	position: absolute;
+	background-color: #ed8a63;
+	position: fixed;
 	bottom: 0;
 }
 
