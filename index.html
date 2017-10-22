@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html ng-app="FlatFinderApp">
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>The Munich Flat Finder</title>
 	<base href="/">
+
 
 <!-- Bower Components -->
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -10,13 +14,14 @@
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
 
 <!-- Fonts from Google  -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Comfortaa" rel="stylesheet">
 
-<!-- My Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="flatfinder.css">
+<!-- My Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/defaultStylesheet.css">
+    <link rel="stylesheet" media="screen and (min-width:600px)" type="text/css" href="css/tabletStylesheet.css">
+    <link rel="stylesheet" media="screen and (min-width:1000px)" type="text/css" href="css/desktopStylesheet.css">
     
 </head>
 <body>
@@ -40,6 +45,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a class="btn btn-default" href="#">Find a Flat</a></li>
         <li><a class="btn btn-default" href="#">FAQ</a></li>
+        <li><a class="btn btn-default" href="#">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

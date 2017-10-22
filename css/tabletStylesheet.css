@@ -1,0 +1,22 @@
+/*Navigation*/
+.navbar-default .navbar-brand {
+	font-family: 'Amatic SC', cursive;
+	font-size:4rem;
+	color:#d84797;
+}
+
+
+/*Home Page*/
+
+#HomePage{
+	width: 100%;
+	height: 50vh;
+	margin-top: -20px;
+}
+
+#HomePage .container h1{
+	font-size: 3em;
+	color: #00ffcb;
+	text-align: center;
+	padding-top:15%;
+}
