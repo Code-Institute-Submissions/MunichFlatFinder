@@ -54,7 +54,6 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 #HomePage{
 	background-image: url(/assets/MunichLargeBW.jpg);
 	background-size: cover;
-	background-position: left;
 	width: 100%;
 	height: 50vh;
 	margin-top: -20px;
