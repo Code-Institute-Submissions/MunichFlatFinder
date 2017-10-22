@@ -8,19 +8,19 @@ angular.module('RouteControllers', [])
 	}    	
         
 
-//Show the about-section on the first page, only on mobile devices
-    	var currentScreenWidth = $(window).width();
-    	console.log(currentScreenWidth);
+// //Show the about-section on the first page, only on mobile devices
+//     	var currentScreenWidth = $(window).width();
+//     	console.log(currentScreenWidth);
 
-    	$scope.showAbout = false;
+//     	$scope.showAbout = false;
 
-    	if(currentScreenWidth < 1050){
-    		$scope.showAbout = true;
+//     	if(currentScreenWidth < 1050){
+//     		$scope.showAbout = true;
 
-    	} else {
-    		$scope.showAbout = false;
-    	}
-    	console.log($scope.showAbout);
+//     	} else {
+//     		$scope.showAbout = false;
+//     	}
+//     	console.log($scope.showAbout);
 
 
 });

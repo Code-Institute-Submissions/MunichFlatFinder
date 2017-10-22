@@ -1,4 +1,4 @@
-var myApp = angular.module("FlatFinderApp", ["ngRoute", "RouteControllers", "AboutSectionDirective"]);
+var myApp = angular.module("FlatFinderApp", ["ngRoute", "RouteControllers"]);
 
 myApp.config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
