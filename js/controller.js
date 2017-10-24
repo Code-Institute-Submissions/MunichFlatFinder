@@ -8,19 +8,36 @@ angular.module('RouteControllers', [])
 	}    	
         
 
-// //Show the about-section on the first page, only on mobile devices
-//     	var currentScreenWidth = $(window).width();
-//     	console.log(currentScreenWidth);
-
-//     	$scope.showAbout = false;
-
-//     	if(currentScreenWidth < 1050){
-//     		$scope.showAbout = true;
-
-//     	} else {
-//     		$scope.showAbout = false;
-//     	}
-//     	console.log($scope.showAbout);
 
 
-});
+
+
+	}).controller('FlatFinderController', function($scope, $location, UserAPIService){
+
+
+//Get the results from the fake Immoscout API and filter the results to get only those matching the selected area
+		var URL = "listings.json";
+		var area = $scope.area;
+
+		$scope.getListings = function() {
+			UserAPIService.callImmoListings(URL).then(function(results){
+				var listingsArr = results.data["resultlist.resultlist"].resultlistEntries[0].resultlistEntry;
+
+				var filteredListingsArr = listingsArr.filter(x => x["resultlist.realEstate"].address.quarter === $scope.area);
+
+				filteredListingsArr.forEach(function(listing) {
+
+				//get the coordonates
+					var lat = listing["resultlist.realEstate"].address.wgs84Coordinate.latitude;
+					var long = listing["resultlist.realEstate"].address.wgs84Coordinate.longitude;
+
+				//get the data for the list
+
+				});
+
+			}).catch(function(err){
+				console.log(err);
+			});
+		};
+
+	});

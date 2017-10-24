@@ -1,0 +1,11 @@
+<select name="area" form="area" ng-model="area">
+  <option value="Giesing">Giesing</option>
+  <option value="Neuhausen">Neuhausen</option>
+  <option value="Bogenhausen">Bogenhausen</option>
+  <option value="Schwabing">Schwabing</option>
+</select>
+
+
+<button ng-click="getListings($scope.area)">Find</button>
+
+{{area}}
