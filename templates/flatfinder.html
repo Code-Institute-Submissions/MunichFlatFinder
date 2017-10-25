@@ -11,10 +11,10 @@
 <div show-flat ng-if="clicked">
 	<ul class="list-group">
 	<li class="list-group-item" ng-repeat="flat in listingsToShow">
-		<h2 class='list-group-item-heading'>Listing 1:</h2>
-		<p class='list-group-item-text'>{{flat}}</p>
+		<h2 class='list-group-item-heading'><a href={{flat.link}}>{{flat.nb}} {{flat.title}}</a></h2>
+		<p class='list-group-item-text'>Total Rent ("Warm"): {{flat.warmRent}} Euros</p>
+		<p class='list-group-item-text'>Rooms: {{flat.rooms}}</p>
+		<p class='list-group-item-text'>Surface: {{flat.livingspace}} sqm </p>
 	</li>
 </ul>
-
-
 </div>
