@@ -22,7 +22,7 @@ angular.module('RouteControllers', [])
 				var filteredArr = $scope.listingsToShow;
 
 
-				//Once we have the filtered result, we initiate the map and show the items on the map
+				//Once we have the filtered results, we initiate the map and show the items on the map
 				var map;
     			var bounds = new google.maps.LatLngBounds();
     			var markers = [];
@@ -41,7 +41,7 @@ angular.module('RouteControllers', [])
 					markers.push(marker);
 				}
 
-				// Loop through our array of markers & place each one on the map - I received help from eventyret on the piece of code below
+				// Loop through our array of markers & place each one on the map - I received help from eventyret (on the slack channel) on the piece of code below
 				for(var i = 0; i < markers.length; i++ ) {
         				var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
         				bounds.extend(position);

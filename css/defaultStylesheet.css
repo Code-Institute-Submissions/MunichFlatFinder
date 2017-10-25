@@ -115,7 +115,61 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 
 
 
+/*Flat Finder Page*/
 
+#flat-finder-section{
+	background-color: rgba(253,130,87, 0.2);
+	margin-top:-20px;
+	min-height: 90vh;
+}
+
+form {
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+label {
+	margin-right: 10px;
+	color:#820933;
+	font-size:1.1em;
+}
+
+select{
+	background-color: white;
+}
+
+#map{
+	max-width: 100vw;
+	height: 40vh;
+}
+
+#flat-finder-section h2{
+	font-size: 1.4em;
+	color:#820933;
+}
+
+#flat-finder-section h2 span.ng-binding{
+	color: #d84797;
+}
+
+
+#flats-list{
+	max-height: 40vh;
+	overflow: scroll;
+	margin-top:20px;
+}
+
+#flat-finder-section article{
+	background-color: white;
+	margin-top: 20px;
+	margin-right:2.5%;
+	margin-left:2.5%;
+}
+
+#flat-finder-section article:last-child{
+	margin-bottom: 55px;
+	background-color: #ed8a63;
+}
 
 
 /*Footer*/
@@ -124,6 +178,7 @@ footer{
 	background-color: #ed8a63;
 	position: fixed;
 	bottom: 0;
+	margin-top:40px;
 }
 
 footer p{

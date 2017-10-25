@@ -43,9 +43,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-default" href="/flatfinder">Find a Flat</a></li>
-        <li><a class="btn btn-default" href="/faq">FAQ</a></li>
-        <li><a class="btn btn-default" href="#">Contact</a></li>
+        <li><a class="btn btn-default" href="/flatfinder" onclick="$('#bs-example-navbar-collapse-1').toggleClass('in')">Find a Flat</a></li>
+        <li><a class="btn btn-default" href="/faq" onclick="$('#bs-example-navbar-collapse-1').toggleClass('in')">FAQ</a></li>
+        <li><a class="btn btn-default" href="#" onclick="$('#bs-example-navbar-collapse-1').toggleClass('in')">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -54,7 +54,6 @@
 
 <div ng-view>
 </div>
-
 
 <footer>
   <p>Made by Mathilde Barbier</p>
