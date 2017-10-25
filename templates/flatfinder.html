@@ -7,14 +7,16 @@
 	</select>
 <button ng-click="getListings($scope.area)">Find</button></form>
 
-
-<div show-flat ng-if="clicked">
+<div id="map" style="width:600px;height:600px;"></div>
+<div id="flats-list" ng-if="clicked">
 	<ul class="list-group">
-	<li class="list-group-item" ng-repeat="flat in listingsToShow">
-		<h2 class='list-group-item-heading'><a href={{flat.link}}>{{flat.nb}} {{flat.title}}</a></h2>
-		<p class='list-group-item-text'>Total Rent ("Warm"): {{flat.warmRent}} Euros</p>
-		<p class='list-group-item-text'>Rooms: {{flat.rooms}}</p>
-		<p class='list-group-item-text'>Surface: {{flat.livingspace}} sqm </p>
-	</li>
-</ul>
+		<li class="list-group-item" ng-repeat="flat in listingsToShow">
+			<!-- need to add an alert when clicked - outdated links -->
+			<h2 class='list-group-item-heading'><a href={{flat.link}}>{{flat.nb}}- {{flat.title}}</a></h2>
+			<p class='list-group-item-text'>Total Rent ("Warm"): {{flat.warmRent}} Euros</p>
+			<p class='list-group-item-text'>Rooms: {{flat.rooms}}</p>
+			<p class='list-group-item-text'>Surface: {{flat.livingspace}} sqm </p>
+		</li>
+	</ul>
 </div>
+
