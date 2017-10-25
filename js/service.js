@@ -18,9 +18,9 @@ angular.module('ListingModule', [])
 			var flat = {};
 
 			//get the coordonates (to add ---> what happens if no coordinates)
-			flat.coord = {};
-			flat.coord.lat = listing["resultlist.realEstate"].address.wgs84Coordinate.latitude;
-			flat.coord.lng = listing["resultlist.realEstate"].address.wgs84Coordinate.longitude;
+			flat.latLng = {};
+			flat.latLng.lat = listing["resultlist.realEstate"].address.wgs84Coordinate.latitude;
+			flat.latLng.lng = listing["resultlist.realEstate"].address.wgs84Coordinate.longitude;
 
 			//get the data for the list
 			flat.link = listing["@xlink.href"];

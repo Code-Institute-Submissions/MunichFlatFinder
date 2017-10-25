@@ -9,9 +9,6 @@ angular.module('RouteControllers', [])
         
 
 	}).controller('FlatFinderController', function($scope, $location, getListings, FilterService){
-//Map functions - adapted from the Google Maps API Documentation	
-
-
 //Get the results from the fake Immoscout API and filter the results to get only those matching the selected area
 		var URL = "listings.json";
 		$scope.clicked = false;
@@ -24,27 +21,42 @@ angular.module('RouteControllers', [])
 
 				var filteredArr = $scope.listingsToShow;
 
-				var munich = { lat: 48.141181, lng: 11.579338};
-	    		var my_map = new google.maps.Map(document.getElementById('map'), {
+
+				//Once we have the filtered result, we initiate the map and show the items on the map
+				var map;
+    			var bounds = new google.maps.LatLngBounds();
+    			var markers = [];
+    			var munich = { lat: 48.141181, lng: 11.579338};
+				
+				map = new google.maps.Map(document.getElementById("map"), {
 	          		zoom: 13,
 	          		center: munich
 	          	});
 
-				//add a label for each flat
-				for(let i=0; i<filteredArr.length; i++){
-					var marker = new google.maps.Marker({
-          				position: filteredArr[i].coord,
-         				label: String(filteredArr[i].nb),
-          				Setmap: my_map
-          			});
-          			console.log(marker);
+				for(let i=0; i< filteredArr.length; i++){
+					var marker = [];
+					marker.push(String(filteredArr[i].nb));
+					marker.push(filteredArr[i].latLng.lat);
+					marker.push(filteredArr[i].latLng.lng);
+					markers.push(marker);
 				}
 
-				
+				// Loop through our array of markers & place each one on the map - I received help from eventyret on the piece of code below
+				for(var i = 0; i < markers.length; i++ ) {
+        				var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+        				bounds.extend(position);
+        				marker = new google.maps.Marker({
+            			position: position,
+            			map: map,
+            			title: markers[i][0],
+            			label: markers[i][0]
+        			});
+
+        			map.fitBounds(bounds);	
+
+        	}	
 			}).catch( function(err){
 				console.log(err);
 			});
 		};
-
-
 	});
