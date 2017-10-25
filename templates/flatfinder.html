@@ -1,11 +1,20 @@
-<select name="area" form="area" ng-model="area">
-  <option value="Giesing">Giesing</option>
-  <option value="Neuhausen">Neuhausen</option>
-  <option value="Bogenhausen">Bogenhausen</option>
-  <option value="Schwabing">Schwabing</option>
-</select>
+<form>
+	<select name="area" form="area" ng-model="area">
+	  <option value="Giesing">Giesing</option>
+	  <option value="Neuhausen">Neuhausen</option>
+	  <option value="Bogenhausen">Bogenhausen</option>
+	  <option value="Schwabing">Schwabing</option>
+	</select>
+<button ng-click="getListings($scope.area)">Find</button></form>
 
 
-<button ng-click="getListings($scope.area)">Find</button>
+<div show-flat ng-if="clicked">
+	<ul class="list-group">
+	<li class="list-group-item" ng-repeat="flat in listingsToShow">
+		<h2 class='list-group-item-heading'>Listing 1:</h2>
+		<p class='list-group-item-text'>{{flat}}</p>
+	</li>
+</ul>
 
-{{area}}
+
+</div>

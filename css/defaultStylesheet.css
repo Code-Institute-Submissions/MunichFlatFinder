@@ -14,6 +14,9 @@ h1, h2, h3 {
 }
 
 
+
+
+
 /*Navigation*/
 .navbar-default .navbar-brand {
 	font-family: 'Amatic SC', cursive;
@@ -52,6 +55,10 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: white;
 }
+
+
+
+
 
 
 /*Home Page*/
@@ -105,6 +112,8 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 	font-family: 'Amatic SC', cursive;
 	font-size:1em;
 }
+
+
 
 
 
