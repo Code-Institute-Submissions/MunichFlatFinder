@@ -4,7 +4,7 @@ angular.module('RouteControllers', [])
 
 //When you click on get started, you go to the Find a Flat Section
 	$scope.getStarted = function() {
-		$location.path("/flatSearch");
+		$location.path("/flatfinder");
 	};    	
         
 

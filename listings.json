@@ -2524,7 +2524,11 @@
               "address":{
                 "postcode":"80639",
                 "city":"München",
-                "quarter":"Neuhausen"
+                "quarter":"Neuhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.162733,
+                  "longitude":11.513271
+                }
               },
               "companyWideCustomerId":"001.7336580",
               "titlePicture":{
@@ -2604,7 +2608,11 @@
               "address":{
                 "postcode":"80639",
                 "city":"München",
-                "quarter":"Neuhausen"
+                "quarter":"Neuhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.161429,
+                  "longitude":11.523437
+                }
               },
               "companyWideCustomerId":"001.233836",
               "titlePicture":{
@@ -4535,7 +4543,7 @@
                 "houseNumber":"130",
                 "postcode":"80799",
                 "city":"München",
-                "quarter":"Schwabing-West",
+                "quarter":"Schwabing",
                 "wgs84Coordinate":{
                   "latitude":48.15709403898402,
                   "longitude":11.563625033702289
@@ -5533,7 +5541,7 @@
                 "houseNumber":"9",
                 "postcode":"80797",
                 "city":"München",
-                "quarter":"Schwabing-West",
+                "quarter":"Schwabing",
                 "wgs84Coordinate":{
                   "latitude":48.16979697182375,
                   "longitude":11.562536818071422
@@ -5708,7 +5716,7 @@
                 "houseNumber":"1",
                 "postcode":"80796",
                 "city":"München",
-                "quarter":"Schwabing-West",
+                "quarter":"Schwabing",
                 "wgs84Coordinate":{
                   "latitude":48.15782354447637,
                   "longitude":11.574670897664983
@@ -6426,7 +6434,11 @@
               "address":{
                 "postcode":"81675",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.140191,
+                  "longitude":11.612971
+                }
               },
               "companyWideCustomerId":"001.284962",
               "titlePicture":{
@@ -6877,7 +6889,7 @@
                 "houseNumber":"130",
                 "postcode":"80799",
                 "city":"München",
-                "quarter":"Schwabing-West",
+                "quarter":"Schwabing",
                 "wgs84Coordinate":{
                   "latitude":48.15709403898402,
                   "longitude":11.563625033702289
@@ -7735,7 +7747,7 @@
                 "houseNumber":"1",
                 "postcode":"80796",
                 "city":"München",
-                "quarter":"Schwabing-West",
+                "quarter":"Schwabing",
                 "wgs84Coordinate":{
                   "latitude":48.15782354447637,
                   "longitude":11.574670897664983
@@ -7823,7 +7835,7 @@
                 "houseNumber":"9",
                 "postcode":"80797",
                 "city":"München",
-                "quarter":"Schwabing-West",
+                "quarter":"Schwabing",
                 "wgs84Coordinate":{
                   "latitude":48.16979697182375,
                   "longitude":11.562536818071422
@@ -7996,7 +8008,11 @@
               "address":{
                 "postcode":"81925",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.164830,
+                  "longitude":11.660237
+                }
               },
               "companyWideCustomerId":"009.bbf7b4ea-893f-47ce-9fbd-0185dff22566",
               "titlePicture":{
@@ -9384,7 +9400,11 @@
               "address":{
                 "postcode":"81675",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.144003,
+                  "longitude":11.626170
+                }
               },
               "companyWideCustomerId":"001.284962",
               "titlePicture":{
@@ -9604,7 +9624,11 @@
               "address":{
                 "postcode":"81925",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.146403,
+                  "longitude":11.610159
+                }
               },
               "companyWideCustomerId":"009.bbf7b4ea-893f-47ce-9fbd-0185dff22566",
               "titlePicture":{
@@ -9684,7 +9708,11 @@
               "address":{
                 "postcode":"81927",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.1450259,
+                  "longitude":11.5967163
+                }
               },
               "companyWideCustomerId":"009.fc3f55da-b0cf-4039-891b-566bd19af98c",
               "titlePicture":{
@@ -9940,7 +9968,11 @@
               "address":{
                 "postcode":"81679",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.144353,
+                  "longitude":11.612711
+                }
               },
               "companyWideCustomerId":"009.e867480e-c0d3-457f-9f66-fb0055eb615f",
               "titlePicture":{
@@ -10020,7 +10052,11 @@
               "address":{
                 "postcode":"81679",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.152693,
+                  "longitude":11.618975
+                }
               },
               "companyWideCustomerId":"001.691733",
               "titlePicture":{
@@ -10101,7 +10137,11 @@
               "address":{
                 "postcode":"81677",
                 "city":"München",
-                "quarter":"Bogenhausen"
+                "quarter":"Bogenhausen",
+                "wgs84Coordinate":{
+                  "latitude":48.142361,
+                  "longitude":11.616803
+                }
               },
               "companyWideCustomerId":"009.511fab90-3750-4f52-8e7c-3489702e1fbf",
               "titlePicture":{

@@ -1,3 +1,11 @@
+/*Navigation*/
+.navbar-default .navbar-brand {
+	font-family: 'Amatic SC', cursive;
+	font-size:4rem;
+	color:#d84797;
+}
+
+
 /*Home Page*/
 
 #HomePage{
@@ -30,10 +38,40 @@
 	font-size:1.3em;
 }
 
-/*Navigation*/
-.navbar-default .navbar-brand {
-	font-family: 'Amatic SC', cursive;
-	font-size:4rem;
-	color:#d84797;
+
+
+/*Flat Finder Page*/
+#flat-finder-section{
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
 }
 
+form{
+	width: 80%;
+	align-self: flex-start;
+	justify-content: center;
+}
+
+form label{
+	font-size: 2em;
+}
+
+form .btn-default {
+	font-size: 2em;
+}
+
+#map{
+	width: 80%
+}
+
+#flats-list{
+	width: 80%;
+	max-height: 30vh;
+}
+
+#flat-finder-section article{
+	box-sizing:border-box;
+	width: 40%;
+	margin-bottom: 55px;
+}

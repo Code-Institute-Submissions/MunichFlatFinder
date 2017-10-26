@@ -1,44 +1,44 @@
-<section id="flat-finder-section" class="container">
-	<div class="row">
-		<div class="col-lg-6 col-lg-offset-3">
-			<form class="form-inline">
-				<div class='form-group'>
-					<label for="area">Choose an area: </label>
-					<select id="area" name="area" ng-model="area" autofocus>
-					  <option value="Giesing">Giesing</option>
-					  <option value="Neuhausen">Neuhausen</option>
-					  <option value="Bogenhausen">Bogenhausen</option>
-					  <option value="Schwabing">Schwabing</option>
-					</select>
-					<button ng-click="getListings($scope.area)" class="btn btn-default">Find</button>
-				</div>
-			</form>
-		</div>	
-	</div>
-	<div class="row">
-		<div class="col-sm-12 col-lg-6" id="map"></div>
-
-		<div class="col-sm-12 col-lg-6" id="flats-list" ng-if="clicked">
-			<ul class="list-group">
-				<li class="list-group-item" ng-repeat="flat in listingsToShow">
-					<!-- need to add an alert when clicked - outdated links -->
-					<h2 class='list-group-item-heading'><a href={{flat.link}}><span class="number">{{flat.nb}}</span>- {{flat.title}}</a></h2>
-					<p class='list-group-item-text'>Total Rent ("Warm"): {{flat.warmRent}} Euros</p>
-					<p class='list-group-item-text'>Rooms: {{flat.rooms}}</p>
-					<p class='list-group-item-text'>Surface: {{flat.livingspace}} sqm </p>
-				</li>
-			</ul>
-		</div>
-	</div>
+<section id="flat-finder-section" class="container-fluid">
 	
-	<div class="row" hidden-xs>
-		<article ng-if="clicked" class="col-lg-6">
-			<h2>About {{area}}</h2>
-		</article>
+	<form class="form-inline">
+		<div class='form-group'>
+			<label for="area">Select an area </label>
+			<select id="area" name="area" ng-model="area" autofocus>
+			  <option value="Giesing">Giesing</option>
+			  <option value="Neuhausen">Neuhausen</option>
+			  <option value="Bogenhausen">Bogenhausen</option>
+			  <option value="Schwabing">Schwabing</option>
+			</select>
+			<button ng-click="getListings($scope.area)" class="btn btn-default">Find</button>
+		</div>
+	</form>
 
-		<article ng-if="clicked" class="col-lg-6 ">
-			<h2>You can also search here...</h2>
-		</article>
-	</div>	
+	<div id="map"></div>
+
+	<div id="flats-list" ng-if="clicked">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="flat in listingsToShow">
+				<!-- need to add an alert when clicked - outdated links -->
+				<h2 class='list-group-item-heading'><a href={{flat.link}}><span class="number">{{flat.nb}}</span>- {{flat.title}}</a></h2>
+				<p class='list-group-item-text'>Total Rent ("Warm"): {{flat.warmRent}} Euros</p>
+				<p class='list-group-item-text'>Rooms: {{flat.rooms}}</p>
+				<p class='list-group-item-text'>Surface: {{flat.livingspace}} sqm </p>
+			</li>
+		</ul>
+	</div>
+
+
+	<article ng-if="clicked">
+		<h2>About {{area}}</h2>
+		<div ng-if="area === 'Giesing'" giesing></div>
+		<div ng-if="area === 'Neuhausen'" neuhausen></div>
+		<div ng-if="area === 'Bogenhausen'" bogenhausen></div>
+		<div ng-if="area === 'Schwabing'" schwabing></div>
+	</article>
+
+	<article ng-if="clicked">
+		<h2>You can also search here...</h2>
+	</article>
+
 
 </section>

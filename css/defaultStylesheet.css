@@ -14,6 +14,12 @@ h1, h2, h3 {
 }
 
 
+.btn-default {
+	background-color: #d84797;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size:1.3em;
+}
 
 
 
@@ -55,9 +61,6 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: white;
 }
-
-
-
 
 
 
@@ -107,12 +110,7 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 #info .btn-default {
 	margin: 20px auto;
 	display: block;
-	background-color: #d84797;
-	color: white;
-	font-family: 'Amatic SC', cursive;
-	font-size:1em;
 }
-
 
 
 /*Flat Finder Page*/
@@ -121,6 +119,9 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 	background-color: rgba(253,130,87, 0.2);
 	margin-top:-20px;
 	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 form {
@@ -131,11 +132,12 @@ form {
 label {
 	margin-right: 10px;
 	color:#820933;
-	font-size:1.1em;
+	font-size: 1.3;
 }
 
 select{
 	background-color: white;
+	margin-right: 10px;
 }
 
 #map{
@@ -162,13 +164,18 @@ select{
 #flat-finder-section article{
 	background-color: white;
 	margin-top: 20px;
-	margin-right:2.5%;
-	margin-left:2.5%;
+	margin-right:5px;
+	margin-left:5px;
+	padding: 10px;
+}
+
+#flat-finder-section article p{
+	text-align: center;
+	font-size: 0.9em;
 }
 
 #flat-finder-section article:last-child{
 	margin-bottom: 55px;
-	background-color: #ed8a63;
 }
 
 
