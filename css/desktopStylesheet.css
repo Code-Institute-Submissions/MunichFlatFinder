@@ -28,3 +28,20 @@
 }
 
 
+/*Flat Finder Page*/
+#map{
+	width: 40%
+}
+
+#flats-list{
+	width: 40%;
+	margin-left: 2%;
+}
+
+#flat-finder-section article{
+	padding: 15px;
+}
+
+#flat-finder-section article h2{
+	font-size: 1.6em;
+}
