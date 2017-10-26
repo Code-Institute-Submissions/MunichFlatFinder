@@ -9,13 +9,15 @@
 			  <option value="Bogenhausen">Bogenhausen</option>
 			  <option value="Schwabing">Schwabing</option>
 			</select>
-			<button ng-click="getListings($scope.area)" class="btn btn-default">Find</button>
+			<button ng-click="getListings($scope.area)" class="btn btn-default"><style type="text/css" class="glyphicon glyphicon-map-marker"></style> Go!</button>
 		</div>
 	</form>
 
-	<div id="map"></div>
+	<div ng-if="!clicked"><img src="assets/Olympiapark.jpg" alt="View from Olympiapark" class="img-responsive"/></div>
 
-	<div id="flats-list" ng-if="clicked">
+	<div id="map" ng-show="clicked" class="no-border"></div>
+
+	<div id="flats-list" class="no-border" ng-if="clicked">
 		<ul class="list-group">
 			<li class="list-group-item" ng-repeat="flat in listingsToShow">
 				<!-- need to add an alert when clicked - outdated links -->
@@ -28,7 +30,7 @@
 	</div>
 
 
-	<article ng-if="clicked">
+	<article ng-if="clicked" class="green-border">
 		<h2>About {{area}}</h2>
 		<div ng-if="area === 'Giesing'" giesing></div>
 		<div ng-if="area === 'Neuhausen'" neuhausen></div>
@@ -36,7 +38,7 @@
 		<div ng-if="area === 'Schwabing'" schwabing></div>
 	</article>
 
-	<article ng-if="clicked">
+	<article ng-if="clicked" class="pink-border">
 		<h2>You can also search here...</h2>
 	</article>
 

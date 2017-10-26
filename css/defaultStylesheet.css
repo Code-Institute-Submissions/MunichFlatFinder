@@ -21,7 +21,36 @@ h1, h2, h3 {
 	font-size:1.3em;
 }
 
+.no-border{
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
+	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+}
 
+.orange-border{
+	border: 2px solid #ed8a63;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
+	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+}
+
+.pink-border{
+	border: 2px solid #d84797;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
+	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+}
+
+.green-border{
+	border: 2px solid #00ffcb;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
+	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+}
 
 /*Navigation*/
 .navbar-default .navbar-brand {
@@ -127,6 +156,8 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 form {
 	margin-top:20px;
 	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #d84797;
 }
 
 label {
@@ -138,6 +169,16 @@ label {
 select{
 	background-color: white;
 	margin-right: 10px;
+}
+
+select:focus{
+	outline-color: #d84797;
+}
+
+img{
+	max-height: 65vh;
+	filter: opacity(0.7);
+	margin-bottom: 55px;
 }
 
 #map{
@@ -176,6 +217,46 @@ select{
 
 #flat-finder-section article:last-child{
 	margin-bottom: 55px;
+	
+}
+
+
+
+
+
+/*FAQ SECTION*/
+
+#faq-section{
+	background-color: rgba(253,130,87, 0.2);
+	margin-top:-20px;
+	min-height: 90vh;
+}
+
+#accordion{
+	margin: 20px auto;
+}
+
+
+.panel-default > .heading-orange{
+	background-color: #ed8a63;
+	color: white;
+	min-height: 50px;
+}
+
+.panel-default > .heading-pink{
+	background-color: #d84797;
+	color: white;
+	min-height: 50px;
+}
+
+.panel-default > .heading-green{
+	background-color: #00ffcb;
+	min-height: 50px;
+}
+
+.panel-default > .heading-white{
+	background-color: #ffffff;
+	min-height: 50px;
 }
 
 
