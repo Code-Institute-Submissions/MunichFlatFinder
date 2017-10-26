@@ -14,26 +14,29 @@ This app will allow users to search for appartment listings for various areas in
  
 ### How does it work
  
-This app uses the API from ImmobilienScout24 and Google Maps to show listings in Munich. The site is styled with Bootstrap, the pictures come from Pixabay, with a creative common 0 license.  
+This app uses a 'fake' API from ImmobilienScout24 and Google Maps to show listings in Munich. The site is styled with Bootstrap, the pictures come from Pixabay, with a creative common 0 license.  
  
 ## Features
 
 ### Existing Features
 
-### Features to Implement
--General Features
-  - A responsive website for mobile, tablet and desktop.
-
 - Flat Search
-    - Get data from ImmobilienScout24
+    - Show a list of search results for flats Note
     - Show results according to each area
     - Show other relevant data for each area. 
 
 - FAQ
     - A bootstrap accordeon to present Q&A
 
+### Features to Implement
+-General Features
+  - A responsive website for mobile, tablet and desktop.
+
+- Flat Search: 
+  - At the moment I chose not to use the real API from Immoscout since the focus of this project is on Front End. I will update once I get the necessary knowledge. 
+
 - Contact Form
-    - Possibility to send a contact email       
+    - Validate the form       
  
 ## Tech Used
 ### Some the tech used includes:
