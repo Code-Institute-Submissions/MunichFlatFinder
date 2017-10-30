@@ -20,6 +20,9 @@ This app uses a 'fake' API from ImmobilienScout24 and Google Maps to show listin
 
 ### Existing Features
 
+-General Features
+  - A responsive website for mobile, tablet and desktop.
+
 - Flat Search
     - Show a list of search results for flats Note
     - Show results according to each area
@@ -28,15 +31,13 @@ This app uses a 'fake' API from ImmobilienScout24 and Google Maps to show listin
 - FAQ
     - A bootstrap accordeon to present Q&A
 
+- Contact Form
+    - Validate the form  
+
 ### Features to Implement
--General Features
-  - A responsive website for mobile, tablet and desktop.
 
 - Flat Search: 
-  - At the moment I chose not to use the real API from Immoscout since the focus of this project is on Front End. I will update once I get the necessary knowledge. 
-
-- Contact Form
-    - Validate the form       
+  - Use the real API from Immoscout     
  
 ## Tech Used
 ### Some the tech used includes:
@@ -51,7 +52,7 @@ This app uses a 'fake' API from ImmobilienScout24 and Google Maps to show listin
  
 
 ## Testing
-
+All the tests can be found on this [Google Doc](https://docs.google.com/document/d/12Mpm1vwEwq9IfPkyUSRuJDtpQFNdUYEUW3P4D_otnWM/edit?usp=sharing).
 
 ## Contributing
 ### Getting the code up and running
