@@ -9,5 +9,3 @@ $(window).on("load resize", function(){
 		$("nav>div>div>ul>li>a").removeAttr("data-target", "#bs-example-navbar-collapse-1");
 	}
 });
-
-
