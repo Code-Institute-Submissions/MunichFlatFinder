@@ -5,12 +5,9 @@ body{
     max-height: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: 'Amatic SC', cursive;
-}
-
-.btn-default:hover{
-	border: 1px solid #d84797;
+	color:#820933;
 }
 
 
@@ -19,38 +16,95 @@ h1, h2, h3 {
 	color: white;
 	font-family: 'Amatic SC', cursive;
 	font-size:1.3em;
+	-webkit-transition: background-color 300ms ease-in-out;
+	-o-transition: background-color 300ms ease-in-out;
+	transition: background-color 300ms ease-in-out;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default.focus, .btn-default:active:focus{
+	background-color: #820933;
+	color: white;
+}
+
+a{
+	-webkit-transition: background-color 200ms ease-in-out;
+	-o-transition: background-color 200ms ease-in-out;
+	transition: background-color 200ms ease-in-out;
+}
+
+.form-control:focus, input:focus, select:focus {
+    border-color: #d84797;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(237,6,147, 0.09), 0 0 8px rgba(237,6,147, 0.6);
+    box-shadow: inset 0 1px 1px rgba(237,6,147, 0.09), 0 0 8px rgba(237,6,147, 0.6);
+}
+
+input, select {
+	border: 1px solid #ccc;
 }
 
 .no-border{
 	border-radius: 5px;
-	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
-	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
-	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	box-shadow: 5px 3px 10px -2px rgba(0,0,0,0.1);
 }
 
 .orange-border{
 	border: 2px solid #ed8a63;
 	border-radius: 5px;
-	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
-	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
 	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
 }
 
 .pink-border{
 	border: 2px solid #d84797;
 	border-radius: 5px;
-	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
-	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
 	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
 }
 
 .green-border{
 	border: 2px solid #00ffcb;
 	border-radius: 5px;
-	-webkit-box-shadow: 5px 3px 10px -2px rgba(,0,0, 0.1);
-	-moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
+	-webkit-box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
 	box-shadow: 5px 3px 10px -2px rgba(0,0,0, 0.1);
 }
+
+.default-section{
+	width: 100vw;
+	background-color: rgba(156,0,34,0.1);
+	background-image: url("/assets/wall-4-light.png");
+	margin-top:-20px;
+	min-height: 92vh;
+}
+
+.default-section header{
+	margin: 20px auto;
+	border-bottom: 2px solid #d84797;
+	text-align: center;
+}
+
+.default-section h3{
+	font-size: 1.3em;
+}
+
+
+
+/*Angular animation for the view*/
+
+section.ng-enter{
+	-webkit-transition: 0.4s linear all;
+	-o-transition: 0.4s linear all;
+	transition: 0.4s linear all;
+	opacity: 0;
+}
+
+section.ng-enter.ng-enter-active{
+	opacity: 1;
+}
+
+
+
 
 /*Navigation*/
 .navbar-default .navbar-brand {
@@ -64,20 +118,29 @@ h1, h2, h3 {
 }
 
 .nav .btn-default{
-	background-color: #d84797;
 	font-size:1.3em;
 	margin: 10px;
 	padding: 10px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-	background-color: #00ffcb;
-	color:#d84797;
+	background-color: #820933;
+	color: white;
 }
 
 .navbar-default{ 
 	background-color: white;
 	border-bottom: 10px solid #00ffcb;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+	color:#820933;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 	/*style for the toggle button*/
@@ -90,7 +153,6 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: white;
 }
-
 
 
 /*Home Page*/
@@ -113,7 +175,8 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 #info {
 	margin-top: -5%;
 	padding-bottom: 50px;
-	background-color: rgba(253,130,87, 0.2);
+	background-color: rgba(156,0,34,0.1);
+	background-image: url("/assets/wall-4-light.png");
 	min-height: 50vh;
 	width: 100%;
 }
@@ -123,6 +186,7 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 	font-size: 2em;
 	width: 100%;
 	text-align: center;
+	color: #820933;
 }
 
 #info ul{
@@ -142,42 +206,56 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 }
 
 
+
+
+
 /*Flat Finder Page*/
 
 #flat-finder-section{
-	background-color: rgba(253,130,87, 0.2);
-	margin-top:-20px;
-	min-height: 90vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
-form {
+#flat-finder-section form {
 	margin-top:20px;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid #d84797;
+	text-align: center;
 }
 
-label {
-	margin-right: 10px;
+#flat-finder-section label {
+	margin-right: 6px;
 	color:#820933;
-	font-size: 1.3;
+	font-size: 1.3em;
 }
 
-select{
+#flat-finder-section select{
 	background-color: white;
-	margin-right: 10px;
+	margin-right: 6px;
 }
 
-select:focus{
-	outline-color: #d84797;
+#flat-finder-section button{
+	font-size: 1em;
 }
 
-img{
+#flat-finder-section button span{
+	display:none;
+}
+
+
+#flat-finder-section img{
 	max-height: 65vh;
-	filter: opacity(0.7);
+	-webkit-filter: opacity(0.7);
+	        filter: opacity(0.7);
 	margin-bottom: 55px;
 }
 
@@ -188,7 +266,6 @@ img{
 
 #flat-finder-section h2{
 	font-size: 1.4em;
-	color:#820933;
 }
 
 #flat-finder-section h2 span.ng-binding{
@@ -200,6 +277,7 @@ img{
 	max-height: 40vh;
 	overflow: scroll;
 	margin-top:20px;
+	background-color: white;
 }
 
 #flat-finder-section article{
@@ -224,18 +302,40 @@ img{
 	color: #d84797;
 } 
 
-/*FAQ SECTION*/
 
-#faq-section{
-	background-color: rgba(253,130,87, 0.2);
-	margin-top:-20px;
-	min-height: 90vh;
+/*Animate with Angular when Items appear*/
+
+#flat-finder-section>div.ng-enter, #flat-finder-section>article.ng-enter {
+	-webkit-transition: 0.5s linear all;
+	-o-transition: 0.5s linear all;
+	transition: 0.5s linear all;
+	opacity: 0;
+	-webkit-transform: translateY(50px);
+	    -ms-transform: translateY(50px);
+	        transform: translateY(50px);
 }
 
-#accordion{
+#flat-finder-section>div.ng-enter.ng-enter-active, #flat-finder-section>article.ng-enter.ng-enter-active{
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+
+
+
+/*FAQ SECTION*/
+
+
+
+#faq-section #accordion{
 	margin: 20px auto;
 }
 
+#faq-section .panel:last-child{
+	margin-bottom: 55px;
+}
 
 .panel-default > .heading-orange{
 	background-color: #ed8a63;
@@ -260,23 +360,90 @@ img{
 }
 
 
+
+/*Contact Page*/
+
+#contact-page{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#contact-page header{
+	width:80%;
+}
+
+#contact-page form{
+	margin: 10px 10px;
+	background-color: white;
+	padding: 10px;
+	width: 80%;
+}
+
+#contact-page label{
+	font-size: 1em;
+}
+
+.btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled]:hover{
+	background-color: rgba(156,0,34,0.5)
+}
+
+
+#contact-page>div:last-child{
+	background-color: white;
+	margin: 10px 10px;
+	padding: 10px;
+	width: 80%;
+	margin-bottom: 55px;
+	text-align: center;
+}
+
+#contact-page i{
+	font-size: 3em;
+	color: #4A4A4A;
+	margin-top: 10px;
+	margin-right: 10%;
+	margin-left: 10%;
+	-webkit-transition: color 300ms ease-in-out;
+	-o-transition: color 300ms ease-in-out;
+	transition: color 300ms ease-in-out;
+}
+
+#contact-page a i:hover{
+	color: #00ffcb;
+}
+
+
 /*Footer*/
 footer{
 	width: 100%;
 	background-color: #00ffcb;
 	position: fixed;
 	bottom: 0;
-	margin-top:40px;
 }
 
 footer p{
 	color:black;
 	text-align: center;
+	vertical-align: center;
 	margin:5px;
 	font-family: 'Amatic SC', cursive;
 	font-size: 20px;
 }
 
+footer a i{
+	font-size: 2em;
+	color: #4A4A4A;
+	margin-left: 10px;
+}
 
-
-
+footer a i:hover{
+	color: #d84797;
+}

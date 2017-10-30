@@ -1,4 +1,4 @@
-<section id="flat-finder-section" class="container-fluid">
+<section id="flat-finder-section" class="container-fluid default-section">
 	
 	<form class="form-inline">
 		<div class='form-group'>
@@ -9,7 +9,7 @@
 			  <option value="Bogenhausen">Bogenhausen</option>
 			  <option value="Schwabing">Schwabing</option>
 			</select>
-			<button ng-click="getListings($scope.area)" class="btn btn-default"><style type="text/css" class="glyphicon glyphicon-map-marker"></style> Go!</button>
+			<button ng-click="getListings($scope.area)" class="btn btn-default"><span type="text/css" class="glyphicon glyphicon-map-marker"></span> Go!</button>
 		</div>
 	</form>
 
@@ -30,7 +30,7 @@
 	</div>
 
 
-	<article ng-if="clicked" class="green-border">
+	<article ng-if="clicked" class="orange-border">
 		<h2>About {{area}}</h2>
 		<div ng-if="area === 'Giesing'" giesing></div>
 		<div ng-if="area === 'Neuhausen'" neuhausen></div>

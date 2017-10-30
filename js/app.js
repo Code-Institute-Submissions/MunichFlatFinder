@@ -1,4 +1,4 @@
-var myApp = angular.module("FlatFinderApp", ["ngRoute", "RouteControllers", "ListingModule", "areaInfoDirective"]);
+var myApp = angular.module("FlatFinderApp", ["ngRoute", "RouteControllers", "ListingModule", "areaInfoDirective", "ngAnimate"]);
 
 myApp.config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
@@ -16,5 +16,10 @@ myApp.config(function($locationProvider, $routeProvider) {
     .when('/faq', {
         templateUrl: 'templates/faq.html',
         controller: 'FAQController'
+    })
+
+    .when('/contact', {
+        templateUrl: 'templates/contact.html',
+        controller: 'ContactController'
     });
 });    

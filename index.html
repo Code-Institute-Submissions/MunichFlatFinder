@@ -14,9 +14,11 @@
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
 
-<!-- Fonts from Google  -->
+<!-- Fonts from Google & Font Awesome  -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/font-awesome.css">
 
 <!-- My Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/defaultStylesheet.css">
@@ -43,20 +45,22 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-default" href="/flatfinder" onclick="$('#bs-example-navbar-collapse-1').toggleClass('in')">Find a Flat</a></li>
-        <li><a class="btn btn-default" href="/faq" onclick="$('#bs-example-navbar-collapse-1').toggleClass('in')">FAQ</a></li>
-        <li><a class="btn btn-default" href="#" onclick="$('#bs-example-navbar-collapse-1').toggleClass('in')">Contact</a></li>
+        <li><a class="btn btn-default" href="/flatfinder">Find a Flat</a></li>
+        <li><a class="btn btn-default" href="/faq">FAQ</a></li>
+        <li><a class="btn btn-default" href="/contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 
-<div ng-view>
-</div>
+<section ng-view>
+</section>
 
 <footer>
-  <p>Made by Mathilde Barbier</p>
+  <p>Made by Mathilde Barbier 
+    <a href="https://www.linkedin.com/in/mathilde-barbier-a881aa49/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <a href="https://github.com/mathilde206"><i class="fa fa-github-square" aria-hidden="true"></i></a></p>
 </footer>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_sc4BCnc5AMNoIR44U9LI7MF8M-W7vzI"></script>
@@ -64,6 +68,7 @@
 <script src='js/controller.js'></script>
 <script src='js/service.js'></script>
 <script src='js/directives.js'></script>
+<script src='js/myscript.js'></script>
 
 
 </body>

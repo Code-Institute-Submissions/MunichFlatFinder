@@ -12,8 +12,15 @@ angular.module('RouteControllers', [])
 //Get the results from the fake Immoscout API and filter the results to get only those matching the selected area
 		var URL = "listings.json";
 		$scope.clicked = false;
+		$scope.area = "";
 
 		$scope.getListings = function() {
+
+			if($scope.area === ""){
+				alert('Select an area');
+
+			} else {
+
 			getListings(URL).then(function(results) {
 				var listingsArr = results.data["resultlist.resultlist"].resultlistEntries[0].resultlistEntry;
 				$scope.listingsToShow = FilterService(listingsArr, $scope.area);
@@ -41,8 +48,8 @@ angular.module('RouteControllers', [])
 					markers.push(marker);
 				}
 
-				// Loop through our array of markers & place each one on the map - I received help from eventyret (on the slack channel) on the piece of code below
-				for(var i = 0; i < markers.length; i++ ) {
+				// Loop through our array of markers & place each one on the map - I received help from another Code Institute for the code below
+				for(let i = 0; i < markers.length; i++ ) {
         				var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
         				bounds.extend(position);
         				marker = new google.maps.Marker({
@@ -54,9 +61,26 @@ angular.module('RouteControllers', [])
 
         			map.fitBounds(bounds);	
 
-        	}	
+        		}	
 			}).catch( function(err){
 				console.log(err);
 			});
+		}	
+		};
+	}).controller("FAQController", function(){
+
+
+
+
+	}).controller("ContactController", function($scope){
+
+		$scope.contactFormUser = {};
+
+		$scope.submitContactForm = function(){
+			if($scope.contactForm.$valid){
+				$scope.contactFormUser.name = $scope.user.name;
+				$scope.contactFormUser.email = $scope.user.email;
+			}
+			alert("The contact form was not sent - please contact me through linkedin :)");
 		};
 	});
