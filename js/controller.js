@@ -3,9 +3,10 @@ angular.module('RouteControllers', [])
 
 
 //When you click on get started, you go to the Find a Flat Section
-        $scope.getStarted = function () {
-            $location.path('/flatfinder');
-        };
+	$scope.getStarted = function() {
+		$location.path("flatfinder");
+	};    	
+        
 
     }).controller('FlatFinderController', function ($scope, $location, getListings, FilterService) {
 //Get the results from the fake Immoscout API and filter the results to get only those matching the selected area
