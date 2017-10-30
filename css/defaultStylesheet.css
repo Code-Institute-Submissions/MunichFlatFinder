@@ -150,7 +150,7 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
 
 /*Home Page*/
 #HomePage {
-    background-image: url(/assets/MunichLargeBW.jpg);
+    background-image: url(assets/MunichLargeBW.jpg);
     background-size: cover;
     width: 100%;
     height: 40vh;
@@ -168,7 +168,7 @@ button.navbar-toggle.collapsed, .navbar-toggle, .navbar-default .navbar-toggle:h
     margin-top: -5%;
     padding-bottom: 50px;
     background-color: rgba(156, 0, 34, 0.1);
-    background-image: url("/assets/wall-4-light.png");
+    background-image: url("assets/wall-4-light.png");
     min-height: 50vh;
     width: 100%;
 }
