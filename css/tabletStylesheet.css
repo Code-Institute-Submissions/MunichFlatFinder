@@ -1,119 +1,112 @@
 /*Whole Site*/
-.default-section h3{
-	font-size: 2em;
+.default-section h3 {
+    font-size: 2em;
 }
-
 
 /*Navigation*/
 .navbar-default .navbar-brand {
-	font-family: 'Amatic SC', cursive;
-	font-size:4rem;
-	color:#d84797;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    color: #d84797;
 }
 
-.nav .btn-default{
-	font-size: 2em;
+.nav .btn-default {
+    font-size: 2em;
 }
 
 /*Home Page*/
 
-#HomePage{
-	width: 100%;
-	height: 50vh;
-	margin-top: -20px;
+#HomePage {
+    width: 100%;
+    height: 50vh;
+    margin-top: -20px;
 }
 
-#HomePage .container h1{
-	font-size: 3em;
+#HomePage .container h1 {
+    font-size: 3em;
 }
 
-#info h1{	
-	font-size: 3em;
-	padding-top: 70px;
+#info h1 {
+    font-size: 3em;
+    margin-top: 70px;
 }
 
-#info ul{
-	margin-top: 4%;
-	margin-left:0px;
-	text-align: center;
-	padding: 0 4%; 
+#info ul {
+    margin-top: 4%;
+    margin-left: 0px;
+    text-align: center;
+    padding: 0 4%;
 }
 
-#info ul li{
-	font-size: 1.3em;
+#info ul li {
+    font-size: 1.3em;
 }
 
 #info .btn-default {
-	font-size:1.3em;
+    font-size: 1.3em;
 }
-
-
 
 /*Flat Finder Page*/
-#flat-finder-section{
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: stretch;
-	    -ms-flex-align: stretch;
-	        align-items: stretch;
+#flat-finder-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
 }
 
-
-#flat-finder-section button span{
-	display:inline;
+#flat-finder-section button span {
+    display: inline;
 }
 
-#flat-finder-section form{
-	-ms-flex-item-align: start;
-	    align-self: flex-start;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	width: 50%;
+#flat-finder-section form {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50%;
 
 }
 
-#flat-finder-section form label{
-	font-size: 1.5em;
+#flat-finder-section form label {
+    font-size: 1.5em;
 }
 
 #flat-finder-section form .btn-default {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
-
-#map{
-	width: 80%
+#map {
+    width: 80%
 }
 
-#flats-list{
-	width: 80%;
-	height: 30vh;
+#flats-list {
+    width: 80%;
+    height: 30vh;
 }
 
-#flat-finder-section article{
-	-webkit-box-sizing:border-box;
-	        box-sizing:border-box;
-	width: 40%;
-	margin-bottom: 55px;
+#flat-finder-section article {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 40%;
+    margin-bottom: 55px;
 }
-
 
 /*FAQ Page*/
 
-#faq-section header{
-	max-width: 70vw;
-	margin-bottom: 30px;
+#faq-section header {
+    max-width: 70vw;
+    margin-bottom: 30px;
 }
 
-
-#faq-section .panel-group{
-	max-width: 70vw;
-	margin-left: auto;
-	margin-right: auto;
+#faq-section .panel-group {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
 }

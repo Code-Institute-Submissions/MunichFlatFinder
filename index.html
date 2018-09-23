@@ -2,65 +2,63 @@
 <html ng-app="FlatFinderApp">
 <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>The Munich Flat Finder</title>
-	<base href="/">
+    <title>The Munich Flat Finder</title>
+    <base href="/">
 
-
-<!-- Bower Components -->
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- Bower Components -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
 
-<!-- Fonts from Google & Font Awesome  -->
+    <!-- Fonts from Google & Font Awesome  -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Comfortaa" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/font-awesome.css">
 
-<!-- My Stylesheets -->
+    <!-- My Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/defaultStylesheet.css">
     <link rel="stylesheet" media="screen and (min-width:755px)" type="text/css" href="css/tabletStylesheet.css">
     <link rel="stylesheet" media="screen and (min-width:1050px)" type="text/css" href="css/desktopStylesheet.css">
-    
+
 </head>
 <body>
 
 <!-- Navbar from bootstrap -->
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">The Munich Flat Finder</a>
-    </div>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">The Munich Flat Finder</a>
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-default" href="/flatfinder">Find a Flat</a></li>
-        <li><a class="btn btn-default" href="/faq">FAQ</a></li>
-        <li><a class="btn btn-default" href="/contact">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="btn btn-default" href="/flatfinder">Find a Flat</a></li>
+                <li><a class="btn btn-default" href="/faq">FAQ</a></li>
+                <li><a class="btn btn-default" href="/contact">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
-
 
 <section ng-view>
 </section>
 
 <footer>
-  <p>Made by Mathilde Barbier 
-    <a href="https://www.linkedin.com/in/mathilde-barbier-a881aa49/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-    <a href="https://github.com/mathilde206"><i class="fa fa-github-square" aria-hidden="true"></i></a></p>
+    <p>Made by Mathilde Barbier
+        <a href="https://www.linkedin.com/in/mathilde-barbier-a881aa49/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/mathilde206"><i class="fa fa-github-square" aria-hidden="true"></i></a></p>
 </footer>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_sc4BCnc5AMNoIR44U9LI7MF8M-W7vzI"></script>
@@ -69,7 +67,6 @@
 <script src='js/service.js'></script>
 <script src='js/directives.js'></script>
 <script src='js/myscript.js'></script>
-
 
 </body>
 </html>

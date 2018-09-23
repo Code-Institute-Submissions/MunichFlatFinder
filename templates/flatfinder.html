@@ -1,50 +1,48 @@
 <section id="flat-finder-section" class="container-fluid default-section">
-	
-	<form class="form-inline">
-		<div class='form-group'>
-			<label for="area">Select an area </label>
-			<select id="area" name="area" ng-model="area" autofocus>
-			  <option value="Giesing">Giesing</option>
-			  <option value="Neuhausen">Neuhausen</option>
-			  <option value="Bogenhausen">Bogenhausen</option>
-			  <option value="Schwabing">Schwabing</option>
-			</select>
-			<button ng-click="getListings($scope.area)" class="btn btn-default"><span type="text/css" class="glyphicon glyphicon-map-marker"></span> Go!</button>
-		</div>
-	</form>
 
-	<div ng-if="!clicked"><img src="assets/Olympiapark.jpg" alt="View from Olympiapark" class="img-responsive"/></div>
+    <form class="form-inline">
+        <div class='form-group'>
+            <label for="area">Select an area </label>
+            <select id="area" name="area" ng-model="area" autofocus>
+                <option value="Giesing">Giesing</option>
+                <option value="Neuhausen">Neuhausen</option>
+                <option value="Bogenhausen">Bogenhausen</option>
+                <option value="Schwabing">Schwabing</option>
+            </select>
+            <button ng-click="getListings($scope.area)" class="btn btn-default"><span type="text/css" class="glyphicon glyphicon-map-marker"></span> Go!</button>
+        </div>
+    </form>
 
-	<div id="map" ng-show="clicked" class="no-border"></div>
+    <div ng-if="!clicked"><img src="assets/Olympiapark.jpg" alt="View from Olympiapark" class="img-responsive" /></div>
 
-	<div id="flats-list" class="no-border" ng-if="clicked">
-		<ul class="list-group">
-			<li class="list-group-item" ng-repeat="flat in listingsToShow">
-				<!-- need to add an alert when clicked - outdated links -->
-				<h2 class='list-group-item-heading'><a href={{flat.link}}><span class="number">{{flat.nb}}</span>- {{flat.title}}</a></h2>
-				<p class='list-group-item-text'>Total Rent ("Warm"): {{flat.warmRent}} Euros</p>
-				<p class='list-group-item-text'>Rooms: {{flat.rooms}}</p>
-				<p class='list-group-item-text'>Surface: {{flat.livingspace}} sqm </p>
-			</li>
-		</ul>
-	</div>
+    <div id="map" ng-show="clicked" class="no-border"></div>
 
+    <div id="flats-list" class="no-border" ng-if="clicked">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="flat in listingsToShow">
+                <!-- need to add an alert when clicked - outdated links -->
+                <h2 class='list-group-item-heading'><a href={{ flat.link }}><span class="number">{{ flat.nb }}</span>- {{ flat.title }}</a></h2>
+                <p class='list-group-item-text'>Total Rent ("Warm"): {{ flat.warmRent }} Euros</p>
+                <p class='list-group-item-text'>Rooms: {{ flat.rooms }}</p>
+                <p class='list-group-item-text'>Surface: {{ flat.livingspace }} sqm </p>
+            </li>
+        </ul>
+    </div>
 
-	<article ng-if="clicked" class="orange-border">
-		<h2>About {{area}}</h2>
-		<div ng-if="area === 'Giesing'" giesing></div>
-		<div ng-if="area === 'Neuhausen'" neuhausen></div>
-		<div ng-if="area === 'Bogenhausen'" bogenhausen></div>
-		<div ng-if="area === 'Schwabing'" schwabing></div>
-	</article>
+    <article ng-if="clicked" class="orange-border">
+        <h2>About {{ area }}</h2>
+        <div ng-if="area === 'Giesing'" giesing></div>
+        <div ng-if="area === 'Neuhausen'" neuhausen></div>
+        <div ng-if="area === 'Bogenhausen'" bogenhausen></div>
+        <div ng-if="area === 'Schwabing'" schwabing></div>
+    </article>
 
-	<article ng-if="clicked" class="pink-border">
-		<h2>You can also search here...</h2>
-		<ul>
-			<li><a href="http://www.wg-gesucht.de/">WG-Gesucht</a>: Use this website if you're looking for a flatshare.</li>
-			<li><a href="https://salzundbrot.com/">Salz Und Brot</a>: This website partly uses ads from Immoscout, but also has some of its own.</li>
-		</ul>
-	</article>
-
+    <article ng-if="clicked" class="pink-border">
+        <h2>You can also search here...</h2>
+        <ul>
+            <li><a href="http://www.wg-gesucht.de/">WG-Gesucht</a>: Use this website if you're looking for a flatshare.</li>
+            <li><a href="https://salzundbrot.com/">Salz Und Brot</a>: This website partly uses ads from Immoscout, but also has some of its own.</li>
+        </ul>
+    </article>
 
 </section>

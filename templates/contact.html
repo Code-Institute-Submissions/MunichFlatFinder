@@ -1,47 +1,46 @@
 <section id="contact-page" class="default-section container-fluid">
-	<header>
-    	<h3>Contact Me</h3>
-    	<p>Do you have questions, comments, feedback, or do you just want to say hi ? </p>
-    	<p>Fill the form below or find me on the social networks :) </p>
-  	</header>
+    <header>
+        <h3>Contact Me</h3>
+        <p>Do you have questions, comments, feedback, or do you just want to say hi ? </p>
+        <p>Fill the form below or find me on the social networks :) </p>
+    </header>
 
+    <form class="form-horizontal orange-border" name="contactForm" data-ng-submit="submitContactForm()" novalidate>
+        <h4>Get in Touch</h4>
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Your Name:</label>
+            <div class="col-sm-10">
+                <input id="name" type="text" name="name" ng-model="user.name" required>
+                <p ng-show="contactForm.name.$dirty && contactForm.name.$invalid">Please enter your name</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Your Email:</label>
+            <div class="col-sm-10">
+                <input id="email" type="email" name="email" ng-model="user.email" required>
+                <p ng-show="contactForm.email.$dirty && contactForm.email.$invalid">Please enter a valid email address</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="col-sm-2 control-label">Your Message:</label>
+            <div class="col-sm-10">
+                <textarea id="message" class="form-control" rows="3" name="message" ng-model="user.message" required></textarea>
+                <p ng-show="contactForm.message.$dirty && contactForm.message.$invalid">Please enter a mesage!</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default" type="submit" ng-disabled="contactForm.$invalid">Send</button>
+            </div>
+        </div>
+    </form>
 
-	<form class="form-horizontal orange-border" name="contactForm" data-ng-submit="submitContactForm()" novalidate>
-		<h4>Get in Touch</h4>
-		<div class="form-group">
-			<label for="name" class="col-sm-2 control-label">Your Name:</label>
-			<div class="col-sm-10">
-				<input id="name" type="text" name="name" ng-model="user.name" required>
-				<p ng-show="contactForm.name.$dirty && contactForm.name.$invalid">Please enter your name</p>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="email" class="col-sm-2 control-label">Your Email:</label>
-			<div class="col-sm-10">
-				<input id="email" type="email" name="email" ng-model="user.email" required>
-				<p ng-show="contactForm.email.$dirty && contactForm.email.$invalid">Please enter a valid email address</p>
-			</div>
-		</div>
-		<div class="form-group">	
-			<label for="message" class="col-sm-2 control-label">Your Message:</label>
-			<div class="col-sm-10">
-				<textarea id="message" class="form-control" rows="3" name="message" ng-model="user.message" required></textarea>
-				<p  ng-show="contactForm.message.$dirty && contactForm.message.$invalid">Please enter a mesage!</p>
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<button class="btn btn-default" type="submit" ng-disabled="contactForm.$invalid">Send</button>
-			</div>
-		</div>	
-		</form>
-	
-	<div class="pink-border">
-		<h4> You can also contact me with... </h4>
-		<p>
-			<a href="https://www.linkedin.com/in/mathilde-barbier-a881aa49/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
-			<a href="https://github.com/mathilde206"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/lakoaB"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p>
-	</div>
+    <div class="pink-border">
+        <h4> You can also contact me with... </h4>
+        <p>
+            <a href="https://www.linkedin.com/in/mathilde-barbier-a881aa49/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/mathilde206"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/lakoaB"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p>
+    </div>
 
 </section>
