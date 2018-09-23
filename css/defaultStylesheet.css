@@ -72,7 +72,7 @@ input, select {
 .default-section {
     width: 100vw;
     background-color: rgba(156, 0, 34, 0.1);
-    background-image: url("/assets/wall-4-light.png");
+    background-image: url("assets/wall-4-light.png");
     margin-top: -20px;
     min-height: 92vh;
 }
