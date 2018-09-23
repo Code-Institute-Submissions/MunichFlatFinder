@@ -2,7 +2,7 @@
  
 ## Overview
 
-See the Project Pitch [on Google Presentation](https://docs.google.com/presentation/d/1PTxDIQlCjqVekn5yXbvyamrMe0O8fmnZ_bprHjQY-WU) 
+See the Project Pitch [on this presentation](https://github.com/mathilde206/MunichFlatFinder/blob/master/Project_%20The%20Munich%20Flat%20Finder.pdf) 
 
 ### What is this app for?
  
@@ -52,7 +52,7 @@ This app uses a 'fake' API from ImmobilienScout24 and Google Maps to show listin
  
 
 ## Testing
-All the tests can be found on this [Google Doc](https://docs.google.com/document/d/12Mpm1vwEwq9IfPkyUSRuJDtpQFNdUYEUW3P4D_otnWM/edit?usp=sharing).
+All the tests can be found on this [document](https://github.com/mathilde206/MunichFlatFinder/blob/master/MunichFlatFinder%20-%20Tests.pdf).
 
 ## Contributing
 ### Getting the code up and running
